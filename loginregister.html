@@ -1,0 +1,190 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sky Travel</title>
+</head>
+<body>
+    <div id="slideout-menu">
+        <ul>
+            <li>
+                <a class="active" href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#">Places</a>
+            </li>
+            <li>
+                <a href="#">News</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+            <li>
+                <a href="#">Log In/Register</a>
+            </li>
+            <li>
+                <input type="text" placeholder="Search Here">
+                
+            </li>
+        </ul>
+    </div>
+    
+    <nav>
+        <div id="logo-img">
+           <a href="#">
+               <img src="img/logo.jpg" alt="Sky Travel">
+               
+           </a> 
+        </div>
+        <div id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+            <li>
+                <a href="placeslist.html">Places</a>
+            </li>
+            <li>
+                <a href="placeslist.html">News</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+            <li>
+                <a class="active" href="loginregister.html">Log In/Register</a>
+            </li>
+            <li>
+                <div id="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="searchbox">
+        <input type="text" placeholder="Search Here">
+    
+    </div>
+   
+    
+
+    <main>
+        
+       <h2 class="page-heading">Log In/Register</h2>
+       <div id="post-container">
+           <section id="contact">
+        </section>
+        <div class="container">
+            <form method="POST" action="logreg.php">
+            <div class="link-container">
+                <a id="firstA" href="#" onclick="changeForm(0)">Login</a>
+                <a href="#" onclick="changeForm(1)">Register</a>
+            </div>
+            <form id="contact-form" method="POST" action="logreg.php" >
+                <div class="form-input">
+                    <input type="text" name="text" placeholder="Enter the User Name"/>	
+                </div>
+                <div class="form-input">
+                    <input type="password" name="password" placeholder="password"/>
+                </div>
+                <input type="submit" type="submit" value="LOGIN" class="btn-login"/>
+        
+            <div class="register forms hidden">
+                <label for="">Name:</label>
+                <input type="text:" class="input" placeholder="username.."/>
+                <label for="">Lastname:</label>
+                <input type="text:" class="input" placeholder="password.."/>
+                <label for="">Password</label>
+                <input type="password" class="input" placeholder="password..."/>
+                <input id="submit" name="" type="submit" class="input submit" value="Register" onclick="validate(1)" />
+            </div>
+
+        </form>
+        </form>
+         </div>
+       
+       
+       </div>
+    </div>
+    
+
+       <style>
+        body {
+          background-image: url('img/foto14.jpeg');
+          background-repeat: no-repeat;
+          
+        }
+        </style>
+        
+    
+        <footer>
+            <div id="left-footer">
+                <h3>Quick Links</h3>
+                <p>
+                    <u>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                                </li>
+                        <li>
+                            <a href="#">Places</a>
+                        </li>
+                        <li>
+                            <a href="#">News</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Log In/Register</a>
+                        </li>
+                    </u>
+                </p>
+            </div>
+            <div id="right-footer">
+                <h3>Follow us on</h3>
+                <div id="social-media-footer">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    This website is developed by RH
+                </p>
+
+            </div>
+        </footer>
+  
+
+    <script src="main.js"></script>
+</main>
+</body>
+</html>
